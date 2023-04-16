@@ -1,0 +1,39 @@
+@mixin block01(){
+    .block01{
+        &.pd-t{
+            padding-top: 2rem;
+        }
+        margin: 3rem 0;
+        .title{
+            font-size: 32px;
+            font-weight: 700;
+            color: $brand-color;
+        }
+        .sub-title{
+            font-size: 22px;
+            font-weight: 500;
+            opacity: 0.5;
+            margin-bottom: 0;
+            color: $brand-color;
+        }
+        .des{
+                font-size: 14px;
+                font-weight: 400;
+        }
+    }
+    @media(max-width:575.98px){
+        .block01{
+            // &.pd-t{
+            //     padding-top: 2rem;
+            // }
+            margin: 3rem 0;
+            .title{
+                font-size: 24px;
+            }
+            .sub-title{
+                font-size: 16px;
+            }
+        }  
+    }
+}
+@include block01();

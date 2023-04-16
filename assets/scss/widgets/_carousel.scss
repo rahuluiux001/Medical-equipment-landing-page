@@ -1,0 +1,195 @@
+@mixin carousel(){
+    .banner-carousel{
+        .carousel-01{
+            .carousel-indicators{
+                right: auto;
+                left: 0;
+                margin-right: auto;
+                margin-bottom: 1rem;
+                margin-left: 0;
+                
+                button{
+                    width: 15px;
+                    background-color: $secondary-color;
+                }
+                
+            }
+            .carousel-inner{
+                .carousel-item{
+                    margin-top: 4rem;
+                    .item-wrapper{
+                        // display: flex;
+                        // gap: 5rem;
+                    .carousel-caption{
+                        position: unset;
+                        text-align: left;
+                        .subtitle{
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 39px;
+
+
+                            text-transform: uppercase;
+                            color: rgba($brand-color,0.5);
+                        }
+                        .title{
+                            font-size: 56px;
+                            font-weight: 700;
+                            color:$brand-color;
+                        }
+                        .para{
+                            color:$brand-color;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 1.7;
+
+                        }
+                    }
+                
+                    .carousel-img{
+                        width: 300px;
+                        display: block;
+                        margin: auto;
+
+                    }
+                }
+                }
+            }
+            .carousel-control-prev,.carousel-control-next{
+                top: auto;
+                bottom: 0;
+                width: 30px;
+                border: 1px;
+                height: 30px;
+                border: 1px solid $secondary-color;
+                padding: 5px;
+                border-radius: 1rem;
+                color: $brand-color;
+                transition: all ease 0.3s;
+                &:hover{
+                    transition: all ease 0.3s;
+                    background-color: $secondary-color;
+                    span{
+                        background-image: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        svg{
+                            path{
+                                fill:$white
+                            }}}
+                }
+                span{
+                    background-image: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    svg{
+                        width: 18px;
+                        height: 18px;
+                        path{
+                            fill:$secondary-color
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev{
+                right: 36px;
+                left: auto;
+                margin-bottom: 15px;
+                span{
+                    svg{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            .carousel-control-next{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    @media (max-width:575.98px){
+        .banner-carousel{
+            .carousel-01{
+                .carousel-inner{
+                    .carousel-item{
+                        margin-top: 1rem;
+                        .item-wrapper{
+                            gap: 1rem;
+                        .carousel-caption{
+                            .subtitle{
+                                font-size: 16px;
+                            }
+                            .title{
+                                font-size: 32px;
+                            }
+                            .para{
+                                font-size: 16px;
+                            }
+                        }
+                    
+                        .carousel-img{
+                            width: 200px;
+                            display: block;
+                            margin: auto
+    
+                        }
+                    }
+                    }
+                }
+                // .carousel-control-prev,.carousel-control-next{
+                //     top: auto;
+                //     bottom: 0;
+                //     width: 30px;
+                //     border: 1px;
+                //     height: 30px;
+                //     border: 1px solid $secondary-color;
+                //     padding: 5px;
+                //     border-radius: 1rem;
+                //     color: $brand-color;
+                //     transition: all ease 0.3s;
+                //     &:hover{
+                //         transition: all ease 0.3s;
+                //         background-color: $secondary-color;
+                //         span{
+                //             background-image: none;
+                //             display: flex;
+                //             justify-content: center;
+                //             align-items: center;
+                //             svg{
+                //                 path{
+                //                     fill:$white
+                //                 }}}
+                //     }
+                //     span{
+                //         background-image: none;
+                //         display: flex;
+                //         justify-content: center;
+                //         align-items: center;
+                //         svg{
+                //             width: 18px;
+                //             height: 18px;
+                //             path{
+                //                 fill:$secondary-color
+                //             }
+                //         }
+                //     }
+                // }
+                // .carousel-control-prev{
+                //     right: 36px;
+                //     left: auto;
+                //     margin-bottom: 15px;
+                //     span{
+                //         svg{
+                //             transform: rotate(180deg);
+                //         }
+                //     }
+                // }
+                // .carousel-control-next{
+                //     margin-bottom: 15px;
+                // }
+            }
+        }
+    }
+}
+@include carousel();

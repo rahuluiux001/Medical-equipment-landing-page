@@ -1,0 +1,83 @@
+@mixin footer(){
+    .footer{
+        .brand-title{
+            font-size: 32px;
+            font-weight: 700;
+            color: $brand-color;
+        }
+        .para{
+            font-size: 16px;
+            color: $brand-color;
+            line-height: 24px;
+        }
+        .title{
+            font-size: 18px;
+            color: $brand-color;
+            font-weight: 500;
+            margin-top: 2rem;
+        }
+        .footer-lists{
+            list-style: none;
+            padding-left: 0;
+            li{
+                line-height: 2rem;
+                font-size: 14px;
+                color: $brand-color;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.8;
+                }
+                .multi-col-item{
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    svg{
+                        width:20px;
+                            path{
+
+                            }
+                    }
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .social-list{
+            list-style: none;
+            display: flex;
+            gap:1rem;
+            .list-item{
+
+                a{
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $brand-color;
+                    border-radius: 50px;
+                    padding: 10px;
+                    transition: all ease 0.3s;
+                    &:hover{
+                        transition: all ease 0.3s;
+                        background-color: $brand-color;
+                        svg{
+                            path{
+                                fill:$white;
+                            }
+                        }
+                    }
+                    svg{
+                        width:20px;
+                        height: 20px;
+                        path{
+                            fill:$brand-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include footer();

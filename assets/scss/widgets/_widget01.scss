@@ -1,0 +1,49 @@
+@mixin widget01(){
+   .widget01{
+    color: $brand-color;
+    margin: 5rem 0;
+    .widget-sub-hed{
+        color: rgba($brand-color,0.5);
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 0em;
+        margin-bottom: 0;
+
+    }
+    .widget-hed{
+        font-size: 32px;
+        font-weight: 700;
+        
+
+    }
+    .widget-para{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 2;
+
+    }
+    .widget-img{
+        width: 100%;
+    }
+   }
+   @media(max-width:575.98px){
+    .widget01{
+        margin: 5rem 0;
+        .widget-sub-hed{
+            font-size: 16px;
+        }
+        .widget-hed{
+            font-size: 24px;
+        }
+        .widget-img{
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+        .widget-para{
+            font-size: 16px
+        }
+       }
+   }
+}
+@include widget01();
